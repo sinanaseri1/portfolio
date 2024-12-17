@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sina Naseri</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              marioGreen: "#0F9D58" /* Mario green */,
+              marioRed: "#FF0000" /* Mario red */,
+              marioYellow: "#FFD700" /* Mario yellow */,
+              marioBlue: "#1E90FF" /* Mario blue */,
+            },
+          },
+        },
+      };
+    </script>
+    <!-- super mario font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200 text-gray-800">
+    <header class="bg-green-900 text-white p-4">
+      <h1
+        class="text-3xl text-center font-bold text-marioGreen"
+        style="font-family: 'Press Start 2P', cursive"
+      >
+        Sina's Portfolio
+      </h1>
+    </header>
+    <section
+      id="about"
+      class="bg-marioYellow text-gray-800 p-8 rounded-lg shadow-md max-w-3xl mx-auto mt-8"
+    >
+      <h2
+        class="text-3xl font-bold text-center mb-4"
+        style="font-family: 'Press Start 2P', cursive"
+      >
+        About me
+      </h2>
+
+      <p
+        class="text-lg text-center leading-relaxed"
+        style="font-family: 'Press Start 2P', cursive"
+      >
+        Hi! I’m
+        <span class="text-marioGreen">Sina</span>, a passionate aspiring
+        developer. I love creating fun and interactive projects using
+        <span class="text-marioRed">JavaScript</span> and
+        <span class="text-marioBlue">Tailwind CSS</span>. Let’s-a go on a coding
+        adventure together! 🎮
+      </p>
+    </section>
+  </body>
 </html>
