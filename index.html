@@ -3,94 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sina Naseri</title>
+    <title>Sina Naseri Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
             colors: {
-              marioGreen: "#0F9D58" /* Mario green */,
-              marioRed: "#FF0000" /* Mario red */,
-              marioYellow: "#FFD700" /* Mario yellow */,
-              marioBlue: "#1E90FF" /* Mario blue */,
+              textColor: "#333333", // A dark gray for text
             },
           },
         },
       };
     </script>
-    <!-- super mario font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body class="bg-gray-200 text-gray-800">
-    <header class="bg-green-900 text-white p-4">
-      <h1
-        class="text-3xl text-center font-bold text-marioGreen"
-        style="font-family: 'Press Start 2P', cursive"
-      >
-        Sina's Portfolio
-      </h1>
-    </header>
-    <section
-      id="about"
-      class="bg-marioYellow text-gray-800 p-8 rounded-lg shadow-md max-w-3xl mx-auto mt-8"
-    >
-      <h2
-        class="text-3xl font-bold text-center mb-4"
-        style="font-family: 'Press Start 2P', cursive"
-      >
-        About me
-      </h2>
+  <body>
+<header class="p-8 text-center">
+    <h1 class="text-4xl font-bold text-textColor mb-2">Sina Naseri</h1>
+    <p class="text-lg text-textColor">Software Deveopler</p>
+</header>
+<section class="max-w-3xl mx-auto p-8 flex flex-col items-center text-center">
+    <img src="data:image/jpeg;base64,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" alt="Sina Naseri" class="w-40 h-40 rounded-full mb-6 object-cover" />
+    <h2 class="text-3xl font-bold text-textColor mb-4">About Me</h2>
+    <p class="text-textColor leading-relaxed">
+      Hello! I'm an aspiring software developer passionate about building clean, user-friendly applications. I love learning new technologies and solving real-world problems through code.
+    </p>
+  </section>
 
-      <p
-        class="text-lg text-center leading-relaxed"
-        style="font-family: 'Press Start 2P', cursive"
-      >
-        Hi! I’m
-        <span class="text-marioGreen">Sina</span>, a passionate aspiring
-        developer. I love creating fun and interactive projects using
-        <span class="text-marioRed">JavaScript</span> and
-        <span class="text-marioBlue">Tailwind CSS</span>. Let’s-a go on a coding
-        adventure together! 🎮
-      </p>
-    </section>
-    <section
-      id="projects"
-      class="bg-gray-100 p-8 mt-8 rounded-lg shadow-md max-w-4xl mx-auto"
-    >
-      <h2
-        class="text-3xl font-bold text-center mb-6"
-        style="font-family: 'Press Start 2P', cursive"
-      >
-        My Projects
-      </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- project 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3
-            class="text-2xl font-bold text-marioGreen mb-2"
-            style="font-family: 'Press Start 2P', cursive"
-          >
-            Project 1
-          </h3>
-          <p class="text-gray-700 leading-relaxed">
-            This is a description of my first project. It's a fun and
-            interactive project where I used
-            <span class="text-marioRed font-semibold">JavaScript</span> and
-            <span class="text-marioBlue font-semibold">Tailwind CSS</span>.
-          </p>
-        </div>
-      </div>
-    </section>
+  <section class="max-w-3xl mx-auto p-8">
+    <h2 class="text-2xl font-bold text-textColor text-center mb-6">Tech Stack</h2>
+    <div class="flex flex-wrap justify-center gap-4 text-4xl text-textColor">
+      <!-- Java -->
+      <i class="devicon-java-plain"></i>
+      <!-- JavaScript -->
+      <i class="devicon-javascript-plain"></i>
+      <!-- C# -->
+      <i class="devicon-csharp-plain"></i>
+      <!-- HTML -->
+      <i class="devicon-html5-plain"></i>
+      <!-- CSS -->
+      <i class="devicon-css3-plain"></i>
+      <!-- SQL -->
+      <i class="devicon-mysql-plain"></i>
+      <!-- MATLAB -->
+      <i class="devicon-matlab-plain"></i>
+      <!-- AWS -->
+      <i class="devicon-amazonwebservices-original"></i>
+      <!-- Docker -->
+      <i class="devicon-docker-plain"></i>
+      <!-- Kubernetes -->
+      <i class="devicon-kubernetes-plain"></i>
+      <!-- Git -->
+      <i class="devicon-git-plain"></i>
+    </div>
+  </section>
+  
+  <footer class="max-w-3xl mx-auto p-8 text-center">
+    <h2 class="text-2xl font-bold text-textColor mb-4">Contact Me</h2>
+    <p class="text-textColor mb-4">Feel free to reach out via <a href="mailto:naseri.sina@hotmail.com" class="text-blue-600 underline">Email</a>.</p>
+    <p class="text-textColor">
+      <a href="https://github.com/sinanaseri1" target="_blank" class="text-blue-600 underline">
+        Visit My GitHub
+      </a>
+    </p>
+  </footer>
+  
   </body>
 </html>
