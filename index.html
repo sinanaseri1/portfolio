@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sina Naseri Portfolio</title>
     <!-- Google Fonts -->
     <link
@@ -21,11 +21,11 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
             },
             colors: {
-              textColor: '#333333', /* A dark gray for text */
-              accent: '#7C3AED',    /* A purple accent color */
+              textColor: "#333333" /* A dark gray for text */,
+              accent: "#7C3AED" /* A purple accent color */,
             },
           },
         },
@@ -61,7 +61,29 @@
       /* Gradient text for headings */
       .gradient-text {
         /* Makes text transparent and the gradient visible through it */
-        background: linear-gradient(to right, #7C3AED, #3B82F6);
+        background: linear-gradient(to right, #7c3aed, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #about h2 {
+        background: linear-gradient(to right, #7c3aed, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #projects h2 {
+        color: #ff5722; /* Use orange for projects */
+
+        background: linear-gradient(to right, #ff5722, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #tech-stack h2 {
+        color: #2196f3; /* Use blue for tech stack */
+
+        background: linear-gradient(to right, #fc466b, #3f5efb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -69,23 +91,32 @@
   </head>
   <body class="parallax-bg font-sans">
     <!-- Hero Section -->
-    <header class="min-h-screen flex flex-col justify-center items-center text-center px-8 py-16" data-aos="fade-up">
+    <header
+      class="min-h-screen flex flex-col justify-center items-center text-center px-8 py-16"
+      data-aos="fade-up"
+    >
       <!-- Lottie Animation -->
       <div class="w-40 h-40 mb-6">
         <lottie-player
           src="https://assets10.lottiefiles.com/packages/lf20_sR4JrJ.json"
           background="transparent"
           speed="1"
-          style="width: 160px; height: 160px;"
-          loop autoplay>
+          style="width: 160px; height: 160px"
+          loop
+          autoplay
+        >
         </lottie-player>
       </div>
       <h1 class="text-4xl font-bold text-textColor mb-2">Sina Naseri</h1>
       <p class="text-lg text-textColor mb-4">Software Developer</p>
       <p class="text-textColor max-w-xl leading-relaxed mb-8">
-        Crafting user-friendly, efficient software solutions and constantly exploring new technologies. Let's build something amazing together!
+        Crafting user-friendly, efficient software solutions and constantly
+        exploring new technologies. Let's build something amazing together!
       </p>
-      <a href="#about" class="bg-accent text-white px-6 py-3 rounded-full font-bold hover:bg-purple-700 transition duration-300">
+      <a
+        href="#about"
+        class="bg-accent text-white px-6 py-3 rounded-full font-bold hover:bg-purple-700 transition duration-300"
+      >
         Learn More About Me
       </a>
     </header>
@@ -102,7 +133,9 @@
         class="w-48 h-63 rounded-full mb-6 object-contain hover:scale-105 transition-transform duration-300"
       />
       <!-- Using gradient-text class for a nice gradient heading -->
-      <h2 class="text-3xl font-bold text-textColor mb-4 gradient-text">About Me</h2>
+      <h2 class="text-3xl font-bold text-textColor mb-4 gradient-text">
+        About Me
+      </h2>
       <p class="text-textColor leading-relaxed">
         Hello! I'm an aspiring software developer passionate about building
         clean, user-friendly applications. I love learning new technologies and
@@ -112,32 +145,58 @@
 
     <!-- Tech Stack -->
     <section
+      id="tech-stack"
       class="max-w-3xl mx-auto p-8"
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      <h2 class="text-2xl font-bold text-textColor text-center mb-6">Tech Stack</h2>
+      <h2 class="text-2xl font-bold text-textColor text-center mb-6">
+        Tech Stack
+      </h2>
       <div class="flex flex-wrap justify-center gap-6 text-4xl text-textColor">
-        <i class="devicon-java-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-javascript-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-csharp-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-html5-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-css3-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-mysql-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-matlab-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-docker-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-kubernetes-plain hover:scale-110 transition-transform duration-300"></i>
-        <i class="devicon-git-plain hover:scale-110 transition-transform duration-300"></i>
+        <i
+          class="devicon-java-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-javascript-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-csharp-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-html5-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-css3-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-mysql-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-matlab-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-docker-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-kubernetes-plain hover:scale-110 transition-transform duration-300"
+        ></i>
+        <i
+          class="devicon-git-plain hover:scale-110 transition-transform duration-300"
+        ></i>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section
       class="max-w-3xl mx-auto p-8 mt-8"
+      id="projects"
       data-aos="fade-up"
       data-aos-delay="400"
     >
-      <h2 class="text-2xl font-bold text-textColor text-center mb-6">Projects</h2>
+      <h2 class="text-2xl font-bold text-textColor text-center mb-6">
+        Projects
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div
           class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
@@ -175,7 +234,11 @@
     </section>
 
     <!-- Download CV & Contact -->
-    <footer class="max-w-3xl mx-auto p-8 text-center" data-aos="fade-up" data-aos-delay="600">
+    <footer
+      class="max-w-3xl mx-auto p-8 text-center"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
       <h2 class="text-2xl font-bold text-textColor mb-4">Contact Me</h2>
       <p class="text-textColor mb-4 flex justify-center items-center gap-2">
         <a
@@ -192,8 +255,8 @@
           href="mailto:naseri.sina@hotmail.com"
           class="text-blue-600 underline hover:text-blue-800"
         >
-          Email
-        </a>.
+          Email </a
+        >.
       </p>
       <p class="text-textColor flex justify-center items-center gap-2">
         <a href="https://github.com/sinanaseri1" target="_blank">
